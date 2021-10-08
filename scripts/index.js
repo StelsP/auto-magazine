@@ -17,7 +17,7 @@ const swiperGallery = new Swiper('.swiper-gallery', {
   grabCursor: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.gallery__next-btn',
-    prevEl: '.gallery__prev-btn',
+    nextEl: '.gallery__button_type_next',
+    prevEl: '.gallery__button_type_prev',
   },
 });
