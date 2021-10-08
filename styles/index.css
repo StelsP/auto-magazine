@@ -29,6 +29,14 @@
   background-color: #E1FD2C;
 }
 
+@media screen and (min-width: 1440px) {
+  .swiper-gallery {
+    box-sizing: border-box;
+    max-width: 720px;
+    margin: 0;
+    border-right: 1px solid #E1FD2C;
+  }
+}
 .logo {
   display: block;
   background-color: #191D2C;
@@ -284,16 +292,6 @@
   box-sizing: border-box;
   padding: 20px 0;
   border-bottom: 1px solid #E1FD2C;
-  display: flex;
-}
-.gallery__container {
-  min-width: 0;
-}
-.gallery__empty-box {
-  display: none;
-  width: 720px;
-  height: 687px;
-  background-color: red;
 }
 .gallery__text-container {
   margin: 0 auto;
@@ -345,6 +343,18 @@
   }
   .gallery__button_type_prev {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery {
+    padding: 0;
+  }
+  .gallery__image {
+    width: 719px;
+    margin: 0 auto 50px 0;
+  }
+  .gallery__text-container {
+    margin: 0 auto 50px 0;
   }
 }
 .press {
@@ -491,7 +501,7 @@
 }
 @media screen and (min-width: 1440px) {
   .subscribe {
-    width: 720px;
+    width: 670px;
     box-sizing: border-box;
     border-right: 1px solid #E1FD2C;
   }

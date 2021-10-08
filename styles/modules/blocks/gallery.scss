@@ -2,18 +2,6 @@
   box-sizing: border-box;
   padding: 20px 0;
   border-bottom: 1px solid $primaryColor;
-  display: flex;
-
-  &__container {
-    min-width: 0;
-  }
-
-  &__empty-box {
-    display: none;
-    width: 720px;
-    height: 687px;
-    background-color: red;
-  }
 
   &__text-container {
     margin: 0 auto;
@@ -41,7 +29,6 @@
     display: block;
     margin: 0 auto 50px;
     width: calc(100% - 40px);
-
   }
 
   &__button {
@@ -81,6 +68,22 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .gallery {
+    padding: 0;
+
+    &__image {
+      width: 719px;
+      margin: 0 auto 50px 0;
+    }
+
+    &__text-container {
+      margin: 0 auto 50px 0;
+    }
+  }
+}
+
 
 
 
