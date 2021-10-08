@@ -67,3 +67,15 @@
     }
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .intro {
+    padding: 100px 0;
+
+    &__quote {
+
+      font-size: 19px;
+      line-height: 28px;
+    }
+  }
+}

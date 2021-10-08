@@ -4,17 +4,8 @@
 
   border-bottom: 1px solid $primaryColor;
 
-  @media screen and (min-width: 1440px) {
-    flex-direction: row;
-  }
-
   &__text-container {
     border-bottom: 1px solid $primaryColor;
-
-    @media screen and (min-width: 1440px) {
-      border-bottom: none;
-      border-right: 1px solid $primaryColor;
-    }
   }
 
   &__text {
@@ -28,20 +19,6 @@
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-
-    @media screen and (min-width: 768px) {
-      margin: 0 50px;
-      padding: 40px 0 45px;
-
-      font-size: 30px;
-      line-height: 42px;
-    }
-
-    @media screen and (min-width: 1440px) {
-      min-height: 505px;
-      max-width: 620px;
-      border-bottom: none;
-    }
   }
 
   &__span-accent {
@@ -51,26 +28,12 @@
   &__card-container {
     display: flex;
     flex-direction: column;
-
-      @media screen and (min-width: 768px) {
-      flex-direction: row;
-    }
   }
 
   &__card {
     box-sizing: border-box;
     padding: 20px 0;
     border-bottom: 1px solid $primaryColor;
-
-    @media screen and (min-width: 768px) {
-      min-height: 505px;
-      padding: 40px 0;
-
-      border-bottom: none;
-      border-right: 1px solid $primaryColor;
-      min-width: 360px;
-      width: 100%;
-    }
 
     &:last-child {
       border: none;
@@ -88,13 +51,6 @@
     text-align: left;
 
     text-transform: uppercase;
-
-    @media screen and (min-width: 768px) {
-      margin: 0 0 50px 50px;
-
-      font-size: 30px;
-      line-height: 37px;
-    }
   }
 
   &__items-list {
@@ -102,10 +58,6 @@
     padding: 0;
 
     list-style: outside;
-
-    @media screen and (min-width: 768px) {
-      margin: 0 0 0 58px;
-    }
 
       &_type_pluses {
         list-style-type: "\002B";
@@ -126,10 +78,67 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
+  }
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
+  .advantages {
+
+    &__text {
+      margin: 0 50px;
+      padding: 40px 0 45px;
+
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    &__card-container {
+      flex-direction: row;
+    }
+
+    &__card {
+      min-height: 505px;
+      padding: 40px 0;
+
+      border-bottom: none;
+      border-right: 1px solid $primaryColor;
+
+      min-width: 360px;
+      width: 100%;
+    }
+
+    &__title {
+      margin: 0 0 50px 50px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__items-list {
+      margin: 0 0 0 58px;
+    }
+
+    &__item {
       font-size: 22px;
       line-height: 32px;
+    }
+  }
+}
+
+
+@media screen and (min-width: $desktop) {
+  .advantages {
+    flex-direction: row;
+
+    &__text-container {
+      border-bottom: none;
+      border-right: 1px solid $primaryColor;
+    }
+
+    &__text {
+      min-height: 505px;
+      max-width: 620px;
+      border-bottom: none;
     }
   }
 }
