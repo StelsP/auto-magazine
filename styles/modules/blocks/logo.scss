@@ -12,3 +12,17 @@
     margin: 0 auto 20px auto;
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .logo {
+    &_place_header {
+      width: 184px;
+    }
+
+    &_place_footer {
+      width: 184px;
+      margin: 0;
+    }
+  }
+}
+

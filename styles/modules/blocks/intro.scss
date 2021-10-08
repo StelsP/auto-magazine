@@ -1,8 +1,8 @@
 .intro {
   padding: 60px 0;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  align-items: center;
 
   border-bottom: 1px solid $primaryColor;
 
@@ -22,7 +22,7 @@
   }
 
   &__title {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 30px;
 
     max-width: 280px;
 
@@ -35,8 +35,9 @@
   }
 
   &__image {
-    margin: 34px auto 60px auto;
-    width: 280px;
+    display: block;
+    margin: 34px auto 60px;
+    width: calc(100% - 40px);
   }
 
   &__button {
@@ -73,9 +74,70 @@
     padding: 100px 0;
 
     &__quote {
+      margin: 0 auto 30px;
 
       font-size: 19px;
       line-height: 28px;
     }
+
+    &__title {
+      margin: 0 auto 51px;
+      max-width: 560px;
+
+      font-size: 65px;
+      line-height: 73px;
+    }
+
+    &__image {
+      margin: 70px auto 100px;
+      width: 700px;
+    }
+
+    &__button {
+      width: 360px;
+    }
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .intro {
+    padding: 150px 0;
+
+    grid-template-columns: 720px 720px;
+    grid-template-rows: 30px 28px 30px 219px 51px 28px 60px 64px 30px;
+
+    &__quote {
+      margin: 0 auto ;
+
+      grid-column-start: 1;
+      grid-row-start: 2;
+
+
+      &-a {
+        margin: 0 auto;
+
+        grid-column-start: 1;
+        grid-row-start: 6;
+      }
+    }
+
+    &__title {
+      margin: 0 auto;
+
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+
+    &__image {
+      margin: 0 0 0 auto;
+      grid-row-start: 1;
+      grid-row-end: -1;
+      width: 720px;
+    }
+
+    &__button {
+      grid-row-start: 8;
+    }
+  }
+}
+

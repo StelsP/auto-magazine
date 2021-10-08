@@ -1,8 +1,21 @@
 .subscribe {
-  padding: 20px 0 120px;
+  box-sizing: border-box;
+  min-height: 177px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text-container {
+    margin: 0 auto 0 0;
+  }
+
 
   &__title {
-    margin: 0 0 14px 20px;
+    margin: 0 auto 14px;
+    max-width: 280px;
+
 
     font-size: 26px;
     font-style: normal;
@@ -13,7 +26,7 @@
   }
 
   &__quote {
-    margin: 0 auto 60px auto;
+    margin: 0 auto;
 
     max-width: 280px;
 
@@ -80,5 +93,33 @@
     color: $bgColor;
     background: $primaryColor;
     border: 1px solid $primaryColor;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .subscribe {
+    min-height: 217px;
+
+    &__form {
+      max-width: 340px;
+    }
+
+    &__title {
+      font-size: 46px;
+      line-height: 46px;
+    }
+
+    &__quote {
+      font-size: 19px;
+      line-height: 28px;
+    }
+
+    &__input {
+      width: 170px;
+
+      &_type_email {
+        width: 260px;
+      }
+    }
   }
 }
