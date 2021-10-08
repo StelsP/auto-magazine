@@ -362,7 +362,7 @@
 }
 .press__text {
   max-width: 280px;
-  margin: 0 auto 150px auto;
+  margin: 0 auto 150px;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -399,6 +399,28 @@
   border-radius: 75%;
 }
 
+@media screen and (min-width: 768px) {
+  .press {
+    padding: 0;
+  }
+  .press__text {
+    max-width: 668px;
+    margin: 50px auto 263px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .press__container {
+    width: 668px;
+    margin-bottom: 50px;
+  }
+  .press__read-btn {
+    max-width: 110px;
+    max-height: 52px;
+    padding: 12px 26px;
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
 .subscribe {
   box-sizing: border-box;
   min-height: 177px;
