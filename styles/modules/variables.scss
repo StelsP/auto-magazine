@@ -1,2 +1,16 @@
-$bgColor: #191D2C;
-$primaryColor: #E1FD2C;
+@use "sass:map";
+
+$theme-colors: (
+  "bgColor": #191D2C,
+  "primaryColor": #E1FD2C,
+);
+
+
+
+
+
+
+
+
+
+
