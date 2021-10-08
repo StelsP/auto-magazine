@@ -6,10 +6,12 @@
   justify-content: space-between;
   align-items: center;
 
+  border-top: 1px solid $primaryColor;
+
   &__text-container {
+    box-sizing: border-box;
 
   }
-
   &__quote {
     margin: 0 auto;
     max-width: 256px;
@@ -24,13 +26,13 @@
 
 @media screen and (min-width: $tablet) {
   .footer {
+    padding: 0 50px;
     box-sizing: border-box;
     flex-direction: row;
     min-height: 317px;
-    padding: 50px;
 
     &__text-container {
-      min-height: 217px;
+      min-height: 317px;
 
       display: flex;
       flex-direction: column;
@@ -39,7 +41,7 @@
     }
 
     &__quote {
-      margin: 0 0 0 auto;
+      margin: 0 0 50px auto;
     }
   }
 }
