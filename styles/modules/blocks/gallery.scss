@@ -27,7 +27,7 @@
 
   &__image {
     display: block;
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
     width: calc(100% - 40px);
   }
 
@@ -46,7 +46,7 @@
     padding: 34px 0 50px;
 
     &__text-container {
-      width: 700px;
+      max-width: 660px;
     }
 
     &__title {
@@ -75,11 +75,13 @@
 
     &__image {
       width: 719px;
+
       margin: 0 auto 50px 0;
     }
 
     &__text-container {
-      margin: 0 auto 50px 0;
+      width: 620px;
+      margin: 0 auto 50px;
     }
   }
 }

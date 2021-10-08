@@ -2,6 +2,7 @@
   &-pagination {
     position: static;
     text-align: start;
+    align-self: end;
   }
 
   &-pagination-bullet {
@@ -27,6 +28,12 @@
     max-width: 720px;
     margin: 0;
     border-right: 1px solid $primaryColor;
+  }
+
+  .swiper-press {
+    max-width: 720px;
+    margin: 0 0 0 auto;
+    border-left: 1px solid $primaryColor;
   }
 }
 

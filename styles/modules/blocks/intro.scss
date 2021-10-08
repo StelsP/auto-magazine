@@ -36,7 +36,7 @@
 
   &__image {
     display: block;
-    margin: 34px auto 60px;
+    margin: 34px auto 53px;
     width: calc(100% - 40px);
   }
 
@@ -44,7 +44,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-    width: 260px;
+    width: 280px;
     min-height: 64px;
 
     cursor: pointer;
@@ -91,6 +91,7 @@
     &__image {
       margin: 70px auto 100px;
       width: 700px;
+      max-height: 510px;
     }
 
     &__button {
@@ -133,6 +134,8 @@
       grid-row-start: 1;
       grid-row-end: -1;
       width: 720px;
+      max-height: 540px;
+
     }
 
     &__button {

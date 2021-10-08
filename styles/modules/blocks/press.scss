@@ -1,6 +1,20 @@
 .press {
   padding: 20px 0;
 
+  &__title {
+    margin: 50px 0 0 50px;
+
+    display: none;
+    float: left;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
   &__text {
     max-width: 280px;
     margin: 0 auto 150px;
@@ -11,7 +25,6 @@
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-
   }
 
   &__span-accent {
@@ -25,7 +38,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   &__read-btn {
@@ -82,7 +94,19 @@
 }
 
 @media screen and (min-width: $desktop) {
+  .press {
+    &__title {
+      display: block;
+    }
 
+    &__text {
+      width: 619px;
+    }
+
+    &__container {
+      width: 619px;
+    }
+  }
 }
 
 

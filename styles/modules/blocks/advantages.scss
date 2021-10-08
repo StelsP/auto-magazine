@@ -11,7 +11,7 @@
   &__text {
     box-sizing: border-box;
     margin: 0 20px;
-    padding: 18px 0;
+    padding: 20px 0;
 
     font-size: 16px;
     font-style: normal;
@@ -70,7 +70,7 @@
 
   &__item {
     margin: 0;
-    padding: 0 0 0 5px;
+    padding: 0 0 6px 5px;
 
     font-size: 16px;
     font-style: normal;
@@ -78,6 +78,9 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
+    &:last-child {
+      padding: 0 0 2px 5px;
+    }
   }
 }
 
