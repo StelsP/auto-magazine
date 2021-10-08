@@ -1,0 +1,40 @@
+.gallery {
+  box-sizing: border-box;
+  padding: 20px 0;
+  border-bottom: 1px solid $primaryColor;
+
+  &__container {
+    margin: 0 auto;
+    width: 280px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+
+    flex-grow: 1;
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 280px;
+  }
+
+  &__prev-btn {
+    margin-right: 16px;
+  }
+}
+
+
+

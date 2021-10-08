@@ -1,0 +1,135 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid $primaryColor;
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
+
+  &__text-container {
+    border-bottom: 1px solid $primaryColor;
+
+    @media screen and (min-width: 1440px) {
+      border-bottom: none;
+      border-right: 1px solid $primaryColor;
+    }
+  }
+
+  &__text {
+    box-sizing: border-box;
+    margin: 0 20px;
+    padding: 18px 0;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 50px;
+      padding: 40px 0 45px;
+
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      min-height: 505px;
+      max-width: 620px;
+      border-bottom: none;
+    }
+  }
+
+  &__span-accent {
+    font-weight: 400;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+
+      @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__card {
+    box-sizing: border-box;
+    padding: 20px 0;
+    border-bottom: 1px solid $primaryColor;
+
+    @media screen and (min-width: 768px) {
+      min-height: 505px;
+      padding: 40px 0;
+
+      border-bottom: none;
+      border-right: 1px solid $primaryColor;
+      min-width: 360px;
+      width: 100%;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__title {
+    margin: 0 0 40px 20px;
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: left;
+
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 50px 50px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  &__items-list {
+    margin: 0 0 0 28px;
+    padding: 0;
+
+    list-style: outside;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 0 58px;
+    }
+
+      &_type_pluses {
+        list-style-type: "\002B";
+      }
+
+      &_type_minuses {
+        list-style-type: "\2212";
+      }
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0 0 0 5px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}

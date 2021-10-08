@@ -1,0 +1,61 @@
+.press {
+  padding: 20px 0;
+
+  border-bottom: 1px solid $primaryColor;
+
+  &__text {
+    max-width: 280px;
+    margin: 0 auto 150px auto;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__span-accent {
+    font-weight: 400;
+  }
+
+  &__container {
+    width: 280px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__read-btn {
+    flex-grow: 1;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 7px 22px;
+
+    max-width: 88px;
+    max-height: 42px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-decoration: none;
+    color: $primaryColor;
+
+    border: 1px solid $primaryColor;
+    border-radius: 75%;
+  }
+}
+
+
+
+
+

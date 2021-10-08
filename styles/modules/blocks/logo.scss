@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  background-color: $bgColor;
+
+  &_place_header {
+    width: 100px;
+    margin: 25px auto;
+  }
+
+  &_place_footer {
+    width: 280px;
+    margin: 0 auto 20px auto;
+  }
+}
