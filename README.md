@@ -10,5 +10,5 @@ cписок технологий:
   <li>JavaScript</li>
 </ul>
 
-GitHub Pages: 
+GitHub Pages: https://stelsp.github.io/auto-magazine/
  
