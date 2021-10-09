@@ -34,6 +34,12 @@
   &__button {
     width: 24px;
     height: 20px;
+    transition: opacity .3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .6;
+    }
 
     &_type_prev {
       margin-right: 16px;

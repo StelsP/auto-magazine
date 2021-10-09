@@ -27,4 +27,13 @@
   }
 }
 
+@media screen and (min-width: $desktop) {
+  .logo {
+    &_place_header {
+      position: relative;
+      z-index: 6;
+    }
+  }
+}
+
 

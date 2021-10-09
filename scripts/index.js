@@ -21,3 +21,30 @@ const swiperGallery = new Swiper('.swiper-gallery', {
     prevEl: '.gallery__button_type_prev',
   },
 });
+
+
+const popup = document.querySelector('.popup');
+const popupOpen = document.querySelector('.popup_opened');
+
+const popupOpenBtn = document.querySelector('.nav__button_type_open');
+const popupCloseBtn = document.querySelector('.popup__button_type_close');
+
+addEventListener
+
+// OPEN/CLOSE POPUP
+
+function openPopup(popup) {
+  popup.classList.add('popup_opened');
+}
+
+function closePopup(popup) {
+  popup.classList.remove('popup_opened');
+}
+
+popupOpenBtn.addEventListener('click', () => {
+  openPopup(popup);
+});
+
+popupCloseBtn.addEventListener('click', () => {
+  closePopup(popup);
+});
