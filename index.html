@@ -9,11 +9,25 @@
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./styles/index.css" />
 </head>
-<body class="body">
-  <header class="header">
-    <img src="./images/logo.svg" alt="лого" class="logo logo_place_header">
-    <div class="nav"></div>
-  </header>
+  <body class="body">
+    <header class="header">
+      <img src="./images/logo.svg" alt="лого" class="logo logo_place_header">
+
+      <!-- <div class="nav">
+        <button class="nav__button nav__button_type_open"></button>
+
+      </div> -->
+
+      <div class="popup">
+        <ul class="popup__link-container">
+          <li class="popup__item"><a href="#" class="popup__link">фактыфактыфактыфактыфактыфактыфактыфакты</a></li>
+          <li class="popup__item"><a href="#" class="popup__link">галерея</a></li>
+          <li class="popup__item"><a href="#" class="popup__link">пресса</a></li>
+        </ul>
+        <button class="nav__button nav__button_type_close"></button>
+      </div>
+
+    </header>
     <main class="main">
       <section class="intro">
           <p class="intro__quote">volkswagen T1</p>
@@ -59,7 +73,6 @@
         </div>
       </section>
 
-
       <section class="gallery">
           <div class="swiper swiper-gallery">
             <div class="swiper-wrapper">
@@ -79,8 +92,8 @@
               <img src="./images/gallery__next-btn.svg" alt="стрелка-вперед" class="gallery__button gallery__button_type_next">
             </div>
           </div>
-
       </section>
+
       <section aria-label="press" class="press">
         <h2 class="press__title">Пресса</h2>
         <div class="swiper swiper-press">
@@ -98,28 +111,26 @@
           </div>
         </div>
       </section>
-
     </main>
-  <footer class="footer">
 
-    <div class="subscribe">
-      <div class="subscribe__text-container">
-        <h2 class="subscribe__title">Подписка</h2>
-        <p class="subscribe__quote">На новые спецвыпуски машин.</p>
+    <footer class="footer">
+      <div class="subscribe">
+        <div class="subscribe__text-container">
+          <h2 class="subscribe__title">Подписка</h2>
+          <p class="subscribe__quote">На новые спецвыпуски машин.</p>
+        </div>
+        <form action="#" name="subscribe__form" class="subscribe__form">
+          <input type="text" placeholder="имя" class="subscribe__input subscribe__input_type_name">
+          <input type="text" placeholder="фамилия" class="subscribe__input subscribe__input_type_surname">
+          <input type="email" placeholder="почта" class="subscribe__input subscribe__input_type_email">
+          <button type="submit" class="subscribe__button subscribe__button_type_submit">подписка</button>
+        </form>
       </div>
-      <form action="#" class="subscribe__form">
-        <input type="text" placeholder="имя" class="subscribe__input subscribe__input_type_name">
-        <input type="text" placeholder="фамилия" class="subscribe__input subscribe__input_type_surname">
-        <input type="email" placeholder="почта" class="subscribe__input subscribe__input_type_email">
-        <button class="subscribe__button subscribe__button_type_submit">подписка</button>
-      </form>
-    </div>
-
-    <div class="footer__text-container">
-      <img src="./images/logo.svg" alt="лого" class="logo logo_place_footer">
-      <p class="footer__quote">&#169; Auto-Magazine 2021</p>
-    </div>
-  </footer>
-  <script src="scripts/index.js"></script>
-</body>
+      <div class="footer__text-container">
+        <img src="./images/logo.svg" alt="лого" class="logo logo_place_footer">
+        <p class="footer__quote">&#169; Auto-Magazine 2021</p>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
