@@ -67,6 +67,12 @@
     background: $bgColor;
     border: 1px solid $primaryColor;
 
+    color: $primaryColor;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
     &_type_email {
       width: 200px;
     }

@@ -121,9 +121,13 @@
   margin: 0;
   margin-right: 16px;
   padding: 0;
+  max-width: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .popup__item:last-child {
-  margin-right: 94px;
+  margin-right: auto;
 }
 .popup__link {
   margin: 0;
@@ -586,6 +590,10 @@
   text-transform: uppercase;
   background: #191D2C;
   border: 1px solid #E1FD2C;
+  color: #E1FD2C;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .subscribe__input_type_email {
   width: 200px;

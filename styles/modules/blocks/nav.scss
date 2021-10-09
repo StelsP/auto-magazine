@@ -54,9 +54,13 @@
     margin: 0;
     margin-right: 16px;
     padding: 0;
+    max-width: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 
     &:last-child {
-      margin-right: 94px;
+      margin-right: auto;
     }
   }
 
@@ -75,6 +79,8 @@
     color: $primaryColor;
 
     transition: opacity .3s;
+
+
 
     &:hover {
       opacity: .6;
