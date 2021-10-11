@@ -47,11 +47,6 @@
   font-family: "SourceSansPro", Arial, Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 1440px) {
-  .body {
-    border: 1px solid #E1FD2C;
-  }
-}
 .swiper__read-btn {
   flex-grow: 1;
   box-sizing: border-box;
