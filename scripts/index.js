@@ -6,7 +6,6 @@ const swiperPress = new Swiper('.swiper-press', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-
   },
 });
 
@@ -17,8 +16,8 @@ const swiperGallery = new Swiper('.swiper-gallery', {
   grabCursor: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.gallery__button_type_next',
-    prevEl: '.gallery__button_type_prev',
+    nextEl: '.swiper__button_type_next',
+    prevEl: '.swiper__button_type_prev',
   },
 });
 
@@ -26,7 +25,7 @@ const swiperGallery = new Swiper('.swiper-gallery', {
 const popup = document.querySelector('.popup');
 const popupOpen = document.querySelector('.popup_opened');
 
-const popupOpenBtn = document.querySelector('.nav__button_type_open');
+const popupOpenBtn = document.querySelector('.button_type_open');
 const popupCloseBtn = document.querySelector('.popup__button_type_close');
 
 addEventListener
