@@ -47,3 +47,12 @@ popupOpenBtn.addEventListener('click', () => {
 popupCloseBtn.addEventListener('click', () => {
   closePopup(popup);
 });
+
+const subscribeButton = document.querySelector('.subscribe__button');
+const subscribeForm = document.querySelector('.subscribe__form');
+
+subscribeForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  subscribeButton.textContent = 'готово';
+});
+

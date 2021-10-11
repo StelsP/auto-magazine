@@ -44,7 +44,7 @@
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "SourceSansPro", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 1440px) {
@@ -519,7 +519,9 @@
 }
 .advantages__items-list {
   margin: 0 0 0 28px;
+  margin: 0;
   padding: 0;
+  list-style: none;
   list-style: outside;
 }
 .advantages__items-list_type_pluses {
