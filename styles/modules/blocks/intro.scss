@@ -1,0 +1,146 @@
+.intro {
+  padding: 60px 0;
+
+  display: grid;
+  align-items: center;
+
+  border-bottom: 1px solid $primaryColor;
+
+  &__quote {
+    margin: 0 auto 26px auto;
+
+    max-width: 280px;
+
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0 auto 30px;
+
+    max-width: 280px;
+
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  &__image {
+    display: block;
+    margin: 34px auto 53px;
+    width: calc(100% - 40px);
+  }
+
+  &__button {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+    min-height: 64px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    background-color: $bgColor;
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+
+    &:hover {
+      background: $primaryColor;
+      color: $bgColor;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .intro {
+    padding: 100px 0;
+
+    &__quote {
+      margin: 0 auto 30px;
+
+      font-size: 19px;
+      line-height: 28px;
+    }
+
+    &__title {
+      margin: 0 auto 51px;
+      max-width: 560px;
+
+      font-size: 65px;
+      line-height: 73px;
+    }
+
+    &__image {
+      margin: 70px auto 100px;
+      width: 700px;
+      max-height: 510px;
+    }
+
+    &__button {
+      width: 360px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .intro {
+    padding: 150px 0;
+
+    grid-template-columns: 720px 720px;
+    grid-template-rows: 30px 28px 30px 219px 51px 28px 60px 64px 30px;
+
+    &__quote {
+      margin: 0 auto ;
+
+      grid-column-start: 1;
+      grid-row-start: 2;
+
+
+      &_type_last {
+        margin: 0 auto;
+
+        grid-column-start: 1;
+        grid-row-start: 6;
+      }
+    }
+
+    &__title {
+      margin: 0 auto;
+
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+
+    &__image {
+      margin: 0 0 0 auto;
+      grid-row-start: 1;
+      grid-row-end: -1;
+      width: 720px;
+      max-height: 540px;
+
+    }
+
+    &__button {
+      grid-row-start: 8;
+    }
+  }
+}
+

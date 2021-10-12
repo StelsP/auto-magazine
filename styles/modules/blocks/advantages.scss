@@ -1,0 +1,147 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid $primaryColor;
+
+  &__text-container {
+    border-bottom: 1px solid $primaryColor;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    margin: 0 20px;
+    padding: 20px 0;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__span-accent {
+    font-weight: 400;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card {
+    box-sizing: border-box;
+    padding: 20px 0;
+    border-bottom: 1px solid $primaryColor;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__title {
+    margin: 0 0 40px 20px;
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: left;
+
+    text-transform: uppercase;
+  }
+
+  &__items-list {
+    margin: 0 0 0 28px;
+    @include resetUlStyles;
+
+    list-style: outside;
+
+      &_type_pluses {
+        list-style-type: "\002B";
+      }
+
+      &_type_minuses {
+        list-style-type: "\2212";
+      }
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0 0 6px 5px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    &:last-child {
+      padding: 0 0 2px 5px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .advantages {
+
+    &__text {
+      margin: 0 50px;
+      padding: 40px 0 45px;
+
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    &__card-container {
+      flex-direction: row;
+    }
+
+    &__card {
+      min-height: 505px;
+      padding: 40px 0;
+
+      border-bottom: none;
+      border-right: 1px solid $primaryColor;
+
+      min-width: 360px;
+      width: 100%;
+    }
+
+    &__title {
+      margin: 0 0 50px 50px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__items-list {
+      margin: 0 0 0 58px;
+    }
+
+    &__item {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}
+
+
+@media screen and (min-width: $desktop) {
+  .advantages {
+    flex-direction: row;
+
+    &__text-container {
+      border-bottom: none;
+      border-right: 1px solid $primaryColor;
+    }
+
+    &__text {
+      min-height: 505px;
+      max-width: 620px;
+      border-bottom: none;
+    }
+  }
+}

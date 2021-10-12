@@ -1,0 +1,36 @@
+.press {
+  padding: 20px 0;
+
+  &__title {
+    margin: 50px 0 0 50px;
+
+    display: none;
+    float: left;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .press {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .press {
+    &__title {
+      display: block;
+    }
+  }
+}
+
+
+
+
+

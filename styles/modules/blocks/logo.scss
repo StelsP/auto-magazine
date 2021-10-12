@@ -1,0 +1,39 @@
+.logo {
+  display: block;
+  background-color: $bgColor;
+
+  &_place_header {
+    width: 100px;
+    margin: 25px auto;
+  }
+
+  &_place_footer {
+    width: 280px;
+    margin: 0 auto 20px auto;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .logo {
+    &_place_header {
+      width: 184px;
+      margin: 16px auto;
+    }
+
+    &_place_footer {
+      width: 184px;
+      margin: 50px 0 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .logo {
+    &_place_header {
+      position: relative;
+      z-index: 6;
+    }
+  }
+}
+
+

@@ -1,0 +1,52 @@
+.swiper-slide {
+  &__text {
+    max-width: 280px;
+    margin: 0 auto 150px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__span-accent {
+    font-weight: 400;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 40px;
+    width: calc(100% - 40px);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .swiper-slide {
+    &__text {
+      max-width: 668px;
+      margin: 50px auto 263px;
+
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    &__image {
+      width: 700px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .swiper-slide {
+    &__text {
+      width: 619px;
+    }
+
+    &__image {
+      width: 719px;
+      margin: 0 auto 50px 0;
+    }
+  }
+}

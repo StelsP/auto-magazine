@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>easy_02</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
+  <body class="body">
+    <header class="header">
+      <img src="./images/logo.svg" alt="лого" class="logo logo_place_header">
+
+      <button type="button" class="button button_type_open"></button>
+
+      <nav class="popup">
+        <ul class="popup__link-container">
+          <li class="popup__item"><a href="#" class="popup__link">факты</a></li>
+          <li class="popup__item"><a href="#" class="popup__link">галерея</a></li>
+          <li class="popup__item"><a href="#" class="popup__link">пресса</a></li>
+        </ul>
+        <button type="button" class="popup__button popup__button_type_close"></button>
+      </nav>
+
+    </header>
+    <main class="main">
+      <section class="intro">
+          <p class="intro__quote">volkswagen T1</p>
+          <h1 class="intro__title">Новая версия популярного микроавтобуса</h1>
+          <p class="intro__quote intro__quote_type_last">С ЭЛЕКТРО ДВИГАТЕЛЕМ</p>
+        <img src="./images/intro__image.jpg" alt="фотография микроавтобуса" class="intro__image">
+        <button type="button" class="intro__button">Подробнее</button>
+      </section>
+
+      <section class="advantages">
+
+        <div class="advantages__text-container">
+          <p class="advantages__text">
+            <span class="advantages__span-accent">VW T1 Electro:&nbsp;</span>
+            Отделение Volkswagen
+            Commercial Vehicles представило концепт
+            e&#8209;Bulli:классический вэн T1 1966 года
+            с электрической силовой установкой.
+            По&nbsp;словам&nbsp;производителя, проект получит
+            коммерческое продолжение,и через
+            фирму&#8209;партнера eClassics наборы для
+            конверсии микроавтобусовв электрокары
+            и уже готовые машины будут продавать
+            частнымклиентам.</p>
+        </div>
+
+        <div class="advantages__card-container">
+          <div class="advantages__card">
+            <h2 class="advantages__title">ПЛЮСЫ</h2>
+            <ul class="advantages__items-list advantages__items-list_type_pluses">
+              <li class="advantages__item">Экологичный</li>
+              <li class="advantages__item">Экономный</li>
+              <li class="advantages__item">Тихий</li>
+            </ul>
+          </div>
+          <div class="advantages__card">
+            <h2 class="advantages__title">МИНУСЫ</h2>
+            <ul class="advantages__items-list advantages__items-list_type_minuses">
+              <li class="advantages__item">Дорогой</li>
+              <li class="advantages__item">Подзарядка</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+          <div class="swiper swiper-gallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/gallery__image_1.jpg" alt="фотография" class="swiper-slide__image">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gallery__image_2.jpg" alt="фотография" class="swiper-slide__image">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gallery__image_3.jpg" alt="фотография" class="swiper-slide__image">
+              </div>
+            </div>
+            <div class="swiper__text-container">
+              <h2 class="swiper__title">Галерея</h2>
+              <img src="./images/gallery__prev-btn.svg" alt="стрелка-назад" class="swiper__button swiper__button_type_prev">
+              <img src="./images/gallery__next-btn.svg" alt="стрелка-вперед" class="swiper__button swiper__button_type_next">
+            </div>
+          </div>
+      </section>
+
+      <section aria-label="press" class="press">
+        <h2 class="press__title">Пресса</h2>
+        <div class="swiper swiper-press">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="swiper-slide__text"><span class="swiper-slide__span-accent">Engadget:&nbsp;</span>VW’s e-BULLI concept shows how your classic van can become an EV.</p>
+            </div>
+            <div class="swiper-slide">
+              <p class="swiper-slide__text"><span class="swiper-slide__span-accent">Drive.ru:&nbsp;</span>Вэн Volkswagen e-Bulli скрестил классику с современной техникой.</p>
+            </div>
+          </div>
+          <div class="swiper__container">
+            <div class="swiper-pagination"></div>
+            <a href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html" class="swiper__read-btn">Читать</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="subscribe">
+        <div class="subscribe__text-container">
+          <h2 class="subscribe__title">Подписка</h2>
+          <p class="subscribe__quote">На новые спецвыпуски машин.</p>
+        </div>
+        <form action="#" name="subscribe__form" class="subscribe__form">
+          <input type="text" placeholder="имя" class="subscribe__input subscribe__input_type_name">
+          <input type="text" placeholder="фамилия" class="subscribe__input subscribe__input_type_surname">
+          <input type="email" placeholder="почта" class="subscribe__input subscribe__input_type_email">
+          <button type="submit" class="subscribe__button">подписка</button>
+        </form>
+      </div>
+      <div class="footer__text-container">
+        <img src="./images/logo.svg" alt="лого" class="logo logo_place_footer">
+        <p class="footer__quote">&#169; Auto-Magazine 2021</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

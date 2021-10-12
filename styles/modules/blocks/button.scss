@@ -1,0 +1,42 @@
+.button {
+  margin: 0;
+  padding: 0;
+  flex-grow: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  transition: opacity .3s;
+
+  background-color: $bgColor;
+  fill: $primaryColor;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &_type_open {
+    position: absolute;
+    top: 24px;
+    right: 23px;
+    background-image: url('../images/nav__button_type_open.svg');
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .button {
+    width: 26px;
+    height: 26px;
+
+    &_type_open {
+      top: 21px;
+      right: 34px;
+    }
+  }
+}
+
+

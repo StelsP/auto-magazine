@@ -1,0 +1,34 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts.css";
+
+@import "./modules/variables.scss";
+@import "./modules/mixins.scss";
+@import "https://unpkg.com/swiper@7/swiper-bundle.min.css";
+
+@import "./modules/blocks/button.scss";
+
+@import "./modules/blocks/body.scss";
+@import "./modules/blocks/swiper.scss";
+@import "./modules/blocks/swiper-pagination.scss";
+@import "./modules/blocks/swiper-pagination-bullet.scss";
+@import "./modules/blocks/swiper-gallery.scss";
+@import "./modules/blocks/swiper-press.scss";
+@import "./modules/blocks/swiper-slide.scss";
+
+@import "./modules/blocks/logo.scss";
+
+@import "./modules/blocks/header.scss";
+
+@import "./modules/blocks/popup.scss";
+
+@import "./modules/blocks/main.scss";
+@import "./modules/blocks/intro.scss";
+@import "./modules/blocks/advantages.scss";
+@import "./modules/blocks/gallery.scss";
+@import "./modules/blocks/press.scss";
+@import "./modules/blocks/subscribe.scss";
+
+@import "./modules/blocks/footer.scss";
+
+
+

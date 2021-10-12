@@ -1,0 +1,119 @@
+.popup {
+  visibility: hidden;
+
+  position: absolute;
+  background-color: $bgColor;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 27px 23px 27px 20px;
+
+  &_opened {
+    visibility: visible;
+  }
+
+  &__link-container {
+    flex-grow: 1;
+
+    @include resetUlStyles;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 0;
+    margin-right: 16px;
+    padding: 0;
+    max-width: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+
+  &__link {
+    margin: 0;
+
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: left;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primaryColor;
+
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    flex-grow: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity .3s;
+
+    color: $primaryColor;
+    background-color: $bgColor;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &_type_close {
+      background-image: url('../images/nav__button_type_close.svg');
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+.popup {
+  padding-right: 34px;
+  padding-left: 34px;
+
+  &__button {
+    width: 26px;
+    height: 26px;
+  }
+    &__link {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .popup {
+    visibility: visible;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    &__button {
+      visibility: hidden;
+    }
+  }
+}
