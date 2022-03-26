@@ -1,4 +1,14 @@
-# yandex-praktikum/auto-magazine
-
-+ [Ссылка на GitHub Pages](https://stelsp.github.io/auto-magazine/)
- 
+# Авто магазин. Проект для Яндекс.Практикума
+***
+Адаптивный одностраничный сайт. Сайт оптимизирован для просмотра на экранах от 320 пикселей до бесконечности. При вёрстке использован подход Mobile First.
++ Внешний вид сайта соответствует макету в Figma.
+## Стек
++ HTML
++ SCSS
++ JavaScript
+## Реализация
++ Grid Layout
++ Flexbox-вёрстка
++ Медиазапросы
++ Для реализации слайдера использована библиотека Swiper.js
+### [Ссылка на GitHub Pages](https://stelsp.github.io/auto-magazine/)
